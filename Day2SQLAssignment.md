@@ -226,11 +226,17 @@ group by c.City
 
 ### 19. List 5 most popular products, their average price, and the customer city that ordered most quantity of it.
 ```
-select top 5 p.ProductName, o.ShipCity, Avg(d.UnitPrice) as 'Average Price', Max(d.Quantity) as 'Most Quantity'
-from [Order Details] d  join Orders o
-on d.OrderID = o.OrderID join Products p
-on d.ProductID = p.ProductID
-group by p.ProductName, o.ShipCity
+Select top 5 productId, Avg(unitPrice) [avgPrice],
+(select top 1 City
+from customers c join Orders o on o.customerId = c.customerId
+join [Order Details] od2 on od2.orderID = o.OrderID
+where od2.ProductId = od1.productId
+Group by City
+order by sum(quantity) desc
+)as city
+from [Order Details] od1
+group by ProductID
+order by sum(quantity) desc
 ```
 
 ### 20. List one city, if exists, that is the city from where the employee sold most orders (not the product quantity) is, and also the city of most total quantity of products ordered
