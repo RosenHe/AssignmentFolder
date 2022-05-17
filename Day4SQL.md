@@ -207,8 +207,9 @@ It is a tracing tool used to trace activities and operations executed on a speci
 SQL injection is a code injection technique that might destroy your database.
 SQL injection is one of the most common web hacking techniques.
 SQL injection is the placement of malicious code in SQL statements, via web page input.
+
 How To Avoid SQL Injection:
-Option 1: Use of Prepared Statements (with Parameterized Queries)
+! Option 1: Use of Prepared Statements (with Parameterized Queries)
 
 // This should REALLY be validated too
 String custname = request.getParameter("customerName");
@@ -218,7 +219,7 @@ PreparedStatement pstmt = connection.prepareStatement( query );
 pstmt.setString( 1, custname);
 ResultSet results = pstmt.executeQuery( );
 
-Option 2: Use of Properly Constructed Stored Procedures
+! Option 2: Use of Properly Constructed Stored Procedures
 
  Try
    Dim command As SqlCommand = new SqlCommand("sp_getAccountBalance", connection)
@@ -230,13 +231,13 @@ Option 2: Use of Properly Constructed Stored Procedures
    'error handling
  End Try
 
-Option 3: Allow-list Input Validation
+! Option 3: Allow-list Input Validation
 
 public String someMethod(boolean sortOrder) {
  String SQLquery = "some SQL ... order by Salary " + (sortOrder ? "ASC" : "DESC");`
  ...
 
-Option 4: Escaping All User Supplied Input
+! Option 4: Escaping All User Supplied Input
 ```
 
 13. Difference between SP and user defined function? When to use SP when to use function?
