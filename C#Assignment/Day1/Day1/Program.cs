@@ -48,5 +48,7 @@ _02UnderstandingTypes dType = new _02UnderstandingTypes();
 //dType.findMostFrequentNumber(example);
 
 //dType.reverseLetter();
-String p = "C# is not C++, and PHP is not Delphi!";
-dType.puncAndSpaces(p);
+//String p = "C# is not C++, and PHP is not Delphi!";
+//dType.puncAndSpaces(p);
+string s = "Hi,exe? ABBA! Hog fully a string: ExE. Bob";
+dType.palindromes(s);

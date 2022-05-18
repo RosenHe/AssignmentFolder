@@ -598,3 +598,98 @@ public void puncAndSpaces(String input)
             Console.WriteLine(sb.ToString());
         }
 ```
+9. Palindrome
+```
+        public void palindromes(String input)
+        {
+            //Because we dont need any non-Letter words.  Char.isLetter(String, index) can check the current char is letter or not.
+            
+            //separate words from String input.
+            List<String> list = new List<String>();
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (Char.IsLetter(input[i]))
+                    sb.Append(input[i]);
+                else
+                {
+                    if(sb.Length > 0)
+                    {
+                        list.Add(sb.ToString());
+                        sb.Clear();
+                    }
+                }
+            }
+            if(sb.Length > 0) list.Add(sb.ToString());
+
+            //Now check are they palindromes.
+            //Make sure they are not duplicates. may use HashSet.
+            //And we need it sorted. so that we may use SortedSet
+            SortedSet<string> res = new SortedSet<string>();
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (checkPalind(list[i]))
+                {
+                    res.Add(list[i]);
+                }
+            }
+            //Print all the unqiue palindormes, no dulicates and sorted.
+            // The sortedSet is not list construct. so that we can use indexing "res[i]"
+            //use for each
+            //check when it is the last element not print common after.
+            int r = 0;
+            foreach(string s in res)
+            {
+                if(r == res.Count - 1)
+                {
+                    Console.Write(s);
+                    break;
+                }
+                else
+                {
+                    Console.Write(s + ", ");
+                }
+                r++;
+            }
+
+        }
+        public bool checkPalind(String input)
+        {
+            int left;
+            int right;
+            int n = input.Length;
+            if(n % 2 == 0)//even length
+            {
+                left = n / 2 - 1;
+                right = n / 2;
+                while(left >= 0 && right < n)
+                {
+                    if (input[left] == input[right])
+                    {
+                        left--;
+                        right++;
+                    }
+                    else
+                        return false; // they are not equal. return false, they are not palindromes.
+                }
+            }
+            else //odd length string.asdsa length = 5. mid = 5/2 = 2 => left = n/2-1, right = n/2+1;
+            {
+                left = n / 2 - 1;
+                right = n / 2 + 1;
+                while(left >= 0 && right < n)
+                {
+                    if(input[left] == input[right])
+                    {
+                        left--;
+                        right++;
+                    }else
+                        return false;
+                }
+            }
+
+            return true;
+        }
+```
+
+10. URL
