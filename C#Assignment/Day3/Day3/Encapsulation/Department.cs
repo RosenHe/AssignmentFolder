@@ -8,5 +8,9 @@ namespace Day3.Encapsulation
 {
     internal class Department
     {
+        public string Name { get; set; }
+        public string id { get; set; }
+
+        public string headofDepartment {get; set; }
     }
 }

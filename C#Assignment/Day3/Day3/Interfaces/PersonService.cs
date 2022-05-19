@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Day3.Interfaces
 {
-    internal class PersonService
+    internal  abstract class PersonService
     {
+        public abstract int getAgeofPerson();
+        public abstract double GetSalaryofPerson();
+
+        public abstract String[] getAddress();
     }
 }

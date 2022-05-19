@@ -1,0 +1,15 @@
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.csproj.AssemblyReference.cache
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.AssemblyInfoInputs.cache
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.AssemblyInfo.cs
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.csproj.CoreCompileInputs.cache
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\bin\Debug\net6.0\Day5SampleApp.exe
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\bin\Debug\net6.0\Day5SampleApp.deps.json
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\bin\Debug\net6.0\Day5SampleApp.runtimeconfig.json
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\bin\Debug\net6.0\Day5SampleApp.dll
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\bin\Debug\net6.0\Day5SampleApp.pdb
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.dll
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\refint\Day5SampleApp.dll
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.pdb
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\Day5SampleApp.genruntimeconfig.cache
+D:\AntraAssignment\C#Assignment\Day5SampleApp\Day5SampleApp\obj\Debug\net6.0\ref\Day5SampleApp.dll
