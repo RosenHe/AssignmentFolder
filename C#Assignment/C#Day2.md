@@ -46,6 +46,10 @@ a type member?
 ```
 4. Why is the partial keyword useful?
 ```
+- With the help of partial classes, multiple developers can work simultaneously in the same class in different files.
+- With the help of a partial class concept, you can split the UI of the design code and the business logic code to read and understand the code.
+- When you were working with automatically generated code, the code can be added to the class without having to recreate the source file like in Visual studio.
+- You can also maintain your application in an efficient manner by compressing large classes into small ones.
 ```
 5. What is a tuple?
 ```diff
@@ -110,7 +114,7 @@ providing its own implementation of a method.
 <span style="color:#911a00">True</span>
 
 16. True/False. Normal (non-abstract) methods can be used in an abstract class. 
-<span style="color:#911a00">False</span>
+<span style="color:#911a00">True</span>
 
 17. True/False.
 Derived classes can override methods that were virtual in the base class. 
