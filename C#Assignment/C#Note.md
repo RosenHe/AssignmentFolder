@@ -23,7 +23,11 @@ A reference type variable that holds a referenece to a method/function wia speci
 ! Disadvantage
 
 ```
+<<<<<<< HEAD
 <h1>Anonymous, Lamda, Action, Prediction and Func</h1>
+=======
+<h1>Anonymous Type</h1>
+>>>>>>> 4440b099d690397a29879ad32b20e87bdd8d0481
 <h4>Definition</h4>
 A class without any name that can contain public read-only properties only
 
@@ -34,6 +38,7 @@ var student = new { Id = 1, FirstName = "James", LastName = "Bond" };
 <h4>Advantage</h4>
 In saving memory and unnecessary code.
 
+<<<<<<< HEAD
 <h4>Anonymous Method</h4>
 When user wants to create an inline method and also wants to pass parameter in the anonymous method like other methods.
 ```
@@ -50,6 +55,9 @@ MathDelegate mathDelegate = (a, b) => a * b;
 Enhanced Iterative Syntax.
 Simplified variable scope.
 When doing Leetcode. Sometime we use lamda express to make a maxium queue.
+=======
+<h4>Where to Use</h4>
+>>>>>>> 4440b099d690397a29879ad32b20e87bdd8d0481
 
 <h4>Action delegate</h4>
 Action takes zero, one or more input parameters, but does not return anything.
@@ -260,6 +268,7 @@ Whereas a class can extend only one abstract class, it can take advantage of mul
 <h1></h1>
 <h1></h1>
 
+<<<<<<< HEAD
 
 
 
@@ -285,3 +294,6 @@ var newMember = member with { Address = "Mumbai" };
 ```
 
 <h1>LINQ</h1>
+=======
+```
+>>>>>>> 4440b099d690397a29879ad32b20e87bdd8d0481
