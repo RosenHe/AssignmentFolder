@@ -24,14 +24,14 @@ A reference type variable that holds a referenece to a method/function wia speci
 
 ```
 <h1>Anonymous Type</h1>
-<h2>Definition</h2>
+<h4>Definition</h4>
 A class without any name that can contain public read-only properties only
 
 ```
 var student = new { Id = 1, FirstName = "James", LastName = "Bond" };
 ```
 
-<h2>Where to Use</h2>
+<h4>Where to Use</h4>
 
 ! Advantage
 
