@@ -75,6 +75,10 @@ Enhanced Iterative Syntax.
 Simplified variable scope.
 When doing Leetcode. Sometime we use lamda express to make a maxium queue.
 
+```
+//This is Java. Not sure about C#
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a); 
+```
 <h4>Action delegate</h4>
 Action takes zero, one or more input parameters, but does not return anything.
 
