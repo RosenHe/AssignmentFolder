@@ -36,6 +36,7 @@ In saving memory and unnecessary code.
 
 <h4>Anonymous Method</h4>
 When user wants to create an inline method and also wants to pass parameter in the anonymous method like other methods.
+
 ```
 MathDelegate mathDelegate = delegate(int a, int b){
     return a+b;
@@ -43,6 +44,7 @@ MathDelegate mathDelegate = delegate(int a, int b){
 ```
 <h4>Lamda Operation</h4>
 Lamda operation is used to create an anonymous method, It uses delegate to create an anonymouse methods. 
+
 ```
 MathDelegate mathDelegate = (a, b) => a * b;
 ```
