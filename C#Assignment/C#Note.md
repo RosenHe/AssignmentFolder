@@ -10,7 +10,7 @@
 
 ```diff
 ! Definition
-A reference type variable that holds a referenece to a method/function wia specific parameter list and return type.
+A reference type variable that holds a referenece to a method/function via specific parameter list and return type.
     - It is like using delegate to handle function event();
     - Function Pointer.
 
@@ -24,7 +24,7 @@ A reference type variable that holds a referenece to a method/function wia speci
 
 ```
 <h1>Anonymous, Lamda, Action, Prediction and Func</h1>
-<h4>Definition</h4>
+<h4>Anonymous Definition</h4>
 A class without any name that can contain public read-only properties only
 
 ```
@@ -322,14 +322,14 @@ Creating obejct of the Class that it is by initializing all the instance variabl
     Accessible from everywhere in a project without any restrictions.
 + Private 自己玩
     Accessible only inside a class or a structure.
-+ Protected 集团的公园。集团的子公司也可以来玩， 别的程序的derived clas
++ Protected 此程序的自己和child class， 别的程序的derived clas
     Accessible inside the class and in all classes that derive from the class.
 + Internal 此程序的all classes，same assembly
     Limited exclusively to classes defined within the current project assembly
 + Protected Internal 此程序的all clases。 和别的程序derived class
     A combination of protected and internal.
     The proected internal member only in the same assembly or in a derived class in other assemblies.
-+ Private Protected 只有此程序的declared class和derived class
++ Private Protected 只有此程序的declared class和derived class， 不和别的程序玩
     We can access members inside the containing class or in a class that derives from a containing class, but only in the same assembly(project).
 ```
 <h1> </h1>
