@@ -95,7 +95,8 @@ When making Entity.
 <h1>Field</h1>
 <h4> Definition</h4>
 An Ordinary member variables or member instances of a class.
-<h4> How to use</h4>
+<h4> How to use</h4> 
+
 ```diff
  public class DepartmentRepository : IRepository<Departments>
     {
@@ -104,9 +105,12 @@ An Ordinary member variables or member instances of a class.
         {
             _list = new List<Departments>();
         }
+    }
 ```
 
 <h1>Static</h1>
+It makes the variable to retain its value between multiple function calls.
+Used with global variables and functions to set their scope to the containing file.
 If multiple instances of a class are created, the last updated value of a static member will be available to all instances.
 一个class有一个memberNumber field。 这个就可以弄成static。这样子每次create 一个class。 这个membernumber++。
 
@@ -223,6 +227,14 @@ garbage collection is very useful as it automatically releases the memory space 
     <td>reference type data type</td>
     <td>value type data type</td>
  </tr>
+   <tr>
+    <td>support inheritance</td>
+    <td>No</td>
+ </tr>
+   <tr>
+    <td>reference can be null</td>
+    <td>No null</td>
+ </tr>
 </table>
 
 <h4>In this way, struct should be used only when you are sure that,</h4>
@@ -246,9 +258,15 @@ Basically it is value type convert to reference type, and vice versa.
 int num = 10;
 Object obj = num; // Boxing
 int i = (int)obj; //Unboxing
+- So Avoid Boxing and unboxing when not necessary, use generics collections.
+- Make the value type simple.
+- Or you have to use object. unless you have to cast it,
+Source: https://stackoverflow.com/questions/1028520/use-cases-for-boxing-a-value-type-in-c
 ```
 
+
 <h1>Overloading & Override</h1>
+
 ```diff
 overloading: @@Same function name, different parameter@@
 overriding: @@Rewrite parent's function. @@
@@ -256,6 +274,7 @@ Overloading occurs when two or more methods in one class have the same method na
 ```
 
 <h1> How do you make a method parameter optional?</h1>
+
 ```
 1. By using default value.
 2. By using method overloading.
@@ -263,16 +282,16 @@ Overloading occurs when two or more methods in one class have the same method na
 ```
 
 <h1>What is an interface and how is it different from abstract class?</h1>
+
 ```
 An abstract class allows you to create functionality that subclasses can implement or override.
 An interface only allows you to define functionality, not implement it.
 Whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
-
-<h1>Distinct</h1>
-<h1></h1>
-<h1></h1>
-
-
+```
+<h1>Virtual Method & Abstraction Method</h1>
+Used virtual method to implement the ploymorphism feature.
+Virtual Method have an implementation and provide the derived classes with the options of overrriding it.
+Abstraction Method do not have implementation. require derived classes to override the method.
 
 <h1>Tuple</h1>
 Tuple, maximum 8, can store any type. < T1,T2, T3..T8 >
@@ -293,4 +312,27 @@ var member = new Member
 var newMember = member with { Address = "Mumbai" };
 ```
 
-<h1>LINQ</h1>
+<h1>What does constructor do in a class? Can it be overridden? Can it be overloaded?</h1>
+Creating obejct of the Class that it is by initializing all the instance variables and creating a place in memory to hold the object. no overridden or overloaded.
+
+<h1>Explain different access modifiers in C# </h1>
+
+```diff
++ Public 大家玩
+    Accessible from everywhere in a project without any restrictions.
++ Private 自己玩
+    Accessible only inside a class or a structure.
++ Protected 集团的公园。集团的子公司也可以来玩， 别的程序的derived clas
+    Accessible inside the class and in all classes that derive from the class.
++ Internal 此程序的all classes，same assembly
+    Limited exclusively to classes defined within the current project assembly
++ Protected Internal 此程序的all clases。 和别的程序derived class
+    A combination of protected and internal.
+    The proected internal member only in the same assembly or in a derived class in other assemblies.
++ Private Protected 只有此程序的declared class和derived class
+    We can access members inside the containing class or in a class that derives from a containing class, but only in the same assembly(project).
+```
+<h1> </h1>
+<h1> </h1>
+<h1> </h1>
+<h1> </h1>
