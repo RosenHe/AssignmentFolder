@@ -38,9 +38,31 @@ In saving memory and unnecessary code.
 When user wants to create an inline method and also wants to pass parameter in the anonymous method like other methods.
 
 ```
-MathDelegate mathDelegate = delegate(int a, int b){
-    return a+b;
-};
+//Anonymous in LinQ
+class Geeks {
+  
+    public int A_no;
+    public string Aname;
+    public string language;
+    public int age;
+}
+  
+class GFG {
+    // Main method
+    static void Main()
+    {
+        List<Geeks> g = new List<Geeks> 
+        {
+  
+            new Geeks{ A_no = 123, Aname = "Shilpa",
+                        language = "C#", age = 23 }
+        };
+  
+        // select query showing result
+        // using anonymous type
+        var anony_ob = from geek in g select new {geek.A_no, geek.Aname, geek.language};
+    }
+}
 ```
 <h4>Lamda Operation</h4>
 Lamda operation is used to create an anonymous method, It uses delegate to create an anonymouse methods. 
