@@ -56,9 +56,19 @@ namespace LinQ
                           };
             var result8 = employeeRepository.GetEmployees().OrderByDescending(money => money.Salary)
                 .ThenByDescending(x => x.FullName).Select(emp => new { Id = emp.Id, FullName = emp.FullName, Salary = emp.Salary});
-            {
-                Console.WriteLine(emp.Id);
-            }
+
+            var result9 = from employee in employeeRepository.GetEmployees()
+                          where employee.Salary > 7000 && employee.Department == "Sales"
+                          select new
+                          {
+                              Id = employee.Id,
+                              FullName = employee.FullName,
+                              Salary = employee.Salary
+
+                          };
+            var result10 = employeeRepository.GetEmployees().Where(x => x.Salary > 7000 & x.Department == "Sales")
+                .Select(x => new {Id = x.Id, FullName = x.FullName, Salary = x.Salary });
+            var result11 = 
         }   
 
     }

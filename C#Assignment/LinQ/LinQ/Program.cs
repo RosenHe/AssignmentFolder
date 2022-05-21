@@ -24,6 +24,9 @@ First: returns the first data when there is one or more matching found; if tehre
 First
 SingleOrDefult: returns a signular macthing record, if there 
  
+Quantifier Operators:
+All():Checks if ALL the elements satisfy the specific condition, if yes, return true, if no -> return false.
+Any():Checks if ANY the elements satisfy the specific condition, if yes, return true, if no -> return false.
  */
 using LinQ;
 
