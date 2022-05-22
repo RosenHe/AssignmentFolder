@@ -227,7 +227,7 @@ class GFG {
 <h1>Partial</h1>
 
 ```
-1. You can split the The UI od the design code and the business logic code to read and understand the code. 
+1. You can split the The UI of the design code and the business logic code to read and understand the code. 
 2. Maintain application in an eddicient manner by compressing large classes into small ones. 
 3. Multiple developers can work simultaneously in the same class in different files.
 ```
@@ -366,7 +366,7 @@ Creating obejct of the Class that it is by initializing all the instance variabl
     We can access members inside the containing class or in a class that derives from a containing class, but only in the same assembly(project).
 ```
 <h1>What is the extension method in C#? examples of built-in extension methods? How to create custom extension methods?</h1>
-Extension methods enable you to "add" methods to exisiting types without creating a new derived type, recompling, or otherwise modifying the original type. Extension methods are static methods. 
+Extension methods enable you to "add" methods to exisiting types without creating a new derived type, recompling, or otherwise modifying the original class, struct or interface. Extension methods are static methods. 
 
 ```
 static class NewMethodClass {
