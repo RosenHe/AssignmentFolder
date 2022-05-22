@@ -101,7 +101,7 @@ Func delegate takes zero, one or more input parameters, and return a value(with 
 public delegate TResult Func<in T1, in T2, out TResult>(T1 arg, T2 arg2) 
 ```
 <h4>Predicate delegate</h4>
-Predicate is a spoecial kind of Func, It represents a method that contains a set of criteria mostly defined inside an if condition and checks whether the passed parameter meets those criteria or not.
+Predicate is a special kind of Func, It represents a method that contains a set of criteria mostly defined inside an if condition and checks whether the passed parameter meets those criteria or not.
 You don't specify a return type because it is always a bool.
 
 ```
@@ -282,7 +282,7 @@ Pointer Type: contain a memory address of the variable value.
 <h1>Boxed & Un-boxed</h1>
 Basically it is value type convert to reference type, and vice versa. 
 
-```
+```diff
 int num = 10;
 Object obj = num; // Boxing
 int i = (int)obj; //Unboxing
@@ -296,8 +296,8 @@ Source: https://stackoverflow.com/questions/1028520/use-cases-for-boxing-a-value
 <h1>Overloading & Override</h1>
 
 ```diff
-overloading: @@Same function name, different parameter@@
-overriding: @@Rewrite parent's function. @@
+overloading: @@ Same function name, different parameter @@
+overriding: @@ Rewrite parent's function. @@
 Overloading occurs when two or more methods in one class have the same method name but different parameters. Overriding occurs when two methods have the same method name and parameters. One of the methods is in the parent class, and the other is in the child class.
 ```
 
@@ -321,12 +321,17 @@ Used virtual method to implement the ploymorphism feature.
 Virtual Method have an implementation and provide the derived classes with the options of overrriding it.
 Abstraction Method do not have implementation. require derived classes to override the method.
 
+<h3>The purpose of an abstract class is to provide a common definition of a base class that multiple derived classes can share.</h3>
+
 <h1>Tuple</h1>
 Tuple, maximum 8, can store any type. < T1,T2, T3..T8 >
 
 <h1>Record</h1>
 Sometimes we have a class defined. but we need to update(add) new property. we have to modify the class, reassign and update. 
 By using "With" expression, we can define new values for a specific property.
+
+To define a @@ reference @@ type that provides built-in functionality for encapsulationg data.
+
 
 ```
 var member = new Member
@@ -360,7 +365,121 @@ Creating obejct of the Class that it is by initializing all the instance variabl
 + Private Protected 只有此程序的declared class和derived class， 不和别的程序玩
     We can access members inside the containing class or in a class that derives from a containing class, but only in the same assembly(project).
 ```
-<h1> </h1>
-<h1> </h1>
-<h1> </h1>
-<h1> </h1>
+<h1>What is the extension method in C#? examples of built-in extension methods? How to create custom extension methods?</h1>
+Extension methods enable you to "add" methods to exisiting types without creating a new derived type, recompling, or otherwise modifying the original type. Extension methods are static methods. 
+
+```
+static class NewMethodClass {
+    // Method 4
+    public static void M4(this Geek g)
+    {
+        Console.WriteLine("Method Name: M4");
+    }
+  
+    // Method 5
+    public static void M5(this Geek g, string str)
+    {
+        Console.WriteLine(str);
+    }
+}
+  
+// Now we create a new class in which
+// Geek class access all the five methods
+public class GFG {
+  
+    // Main Method
+    public static void Main(string[] args)
+    {
+        Geek g = new Geek();
+        g.M1();
+        g.M2();
+        g.M3();
+        g.M4();
+        g.M5("Method Name: M5");
+    }
+}
+```
+
+<h1>What does the underscore _ represent in a switch expression?</h1>
+The underscore (_) character replaces the default keyword to signify that it should match anything if reached. The bodies are now expressions instead of statements. The selected body becomes the switch expression's result.
+
+<h1>Sealed Class</h1>
+A sealed class, in C#, is a class that cannot be inherited by any class but can be instantiated.
+
+
+<h1>Ref vs. Out vs. Params</h1>
+The ref keyword passes arguments by reference. It means any changes made to this argument in the method will be reflected in that variable when control returns to the calling method.
+
+```
+public static string GetNextName(ref int id)
+{
+    string returnText = "Next-" + id.ToString();
+    id += 1;
+    return returnText;
+}
+static void Main(string[] args)
+{
+    int i = 1;
+    Console.WriteLine("Previous value of integer i:" + i.ToString());
+    string test = GetNextName(ref i);
+    Console.WriteLine("Current value of integer i:" + i.ToString());
+}
+```
+The out keyword passes arguments by reference. This is very similar to the ref keyword.
+
+```
+public static string GetNextNameByOut(out int id)
+{
+    id = 1;
+    string returnText = "Next-" + id.ToString();
+    return returnText;
+}
+static void Main(string[] args)
+{
+    int i = 0;
+    Console.WriteLine("Previous value of integer i:" + i.ToString());
+    string test = GetNextNameByOut(out i);
+    Console.WriteLine("Current value of integer i:" + i.ToString());
+}
+```
+
+```diff
+- Ref
+used to state that the parameter passed @@ may @@ be modified by the method.
+- In
+used to state that the parameter passed @@ cannot  @@ be modified by the method.
+- Out
+used to state that the parameter @@ must @@ be modified by the method.
+
+Both @@ Ref nad In @@ the parameter has to have been initialized before passing in.
+@@ Out @@ does not require this.
+```
+
+<h1> Pass by reference vs. Pass by Value </h1>
+<h3>Pass by reference</h3>
+The actual parameter passes to the function. 
+<h3>Pass by Value</h3>
+The parameter value copies to anther variable. Changes make inside the function are not reflected in the original value.
+
+<h1>array vs. arrayList</h1>
+Array is fixed-length data structure. dynamically-created object
+ArrayList is a variable-length data structure. a class of collections
+
+<h1>Example of encapsulation, where to implement</h1>
+When we creating Entity, wrapping up of data under a signle unit.
+Data hiding. Increased Flexibility
+Reusability, Testing code is easier.
+
+<h1>How do you handle exceptions? Syntax.</h1>
+ error handling uses a try...[catch...][finally...] block, and errors are created via a throw statement
+
+ <h1>what is generic, syntax to define </h1>
+ Allows the user to define classes and methods with the placeholder. The basic idea behind using Generic is to allow type(Integer, String, ... or user-defined type) to be a parameter to methods, classes, and interface.
+
+<h1>Dependency Injection</h1>
+Injection of the service into the constructor of the class where it's used. The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
+<h3>Constructor Injection</h3>
+
+Once we register a service, the IoC container automatically performs constructor injection if a service type is included as a parameter in a constructor. 
+<h3>Action Method Injection</h3>
+Sometimes we may only need dependency service type in a single action method. For this, use [FromServices] attribute with the service type parameter in the method.

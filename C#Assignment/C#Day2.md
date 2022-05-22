@@ -73,9 +73,9 @@ Overloading occurs when two or more methods in one class have the same method na
 ```diff
 + Field：
     A variable of any type that is declared directly in the class.
-    - KEEP private to a class and accessed bia getter and setter.
+    - KEEP private to a class and accessed via getter and setter.
 + Property:
-    a member that provides a flexible mechanism to read, write or compute the value pf a private field. 
+    a member that provides a flexible mechanism to read, write or compute the value of a private field. 
     - provide a level of abstraction allowing you to change the fields while not affecting the external way they are accessed by the things that use your class.
 ```
 
