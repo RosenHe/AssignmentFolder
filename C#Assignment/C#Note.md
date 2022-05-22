@@ -451,7 +451,7 @@ used to state that the parameter passed @@ cannot  @@ be modified by the method.
 - Out
 used to state that the parameter @@ must @@ be modified by the method.
 
-Both @@ Ref nad In @@ the parameter has to have been initialized before passing in.
+Both @@ Ref @@ and @@ In @@ the parameter has to have been initialized before passing in.
 @@ Out @@ does not require this.
 ```
 
@@ -462,8 +462,8 @@ The actual parameter passes to the function.
 The parameter value copies to anther variable. Changes make inside the function are not reflected in the original value.
 
 <h1>array vs. arrayList</h1>
-Array is fixed-length data structure. dynamically-created object
-ArrayList is a variable-length data structure. a class of collections
+Array is fixed-length data structure. dynamically-created object.
+ArrayList is a variable-length data structure. a class of collections.
 
 <h1>Example of encapsulation, where to implement</h1>
 When we creating Entity, wrapping up of data under a signle unit.
