@@ -308,6 +308,14 @@ Unrepeatable Problem:<br>  Read & (Read after write)
 
 ![Phantom Read Problem](https://media.geeksforgeeks.org/wp-content/uploads/20190823132927/d51.jpg)
 
+```diff
+- Dirty Read
+A situation when a transaction reads data that has not yet been committed
+- Non Repeatable read
+occurs when a transaction reads the same row twice and gets a different value each time. 
+- Phantom Read
+occurs when two same queries are executed, but the rows retrieved by the two, are different.
+```
 
 17. what is deadlock, how to prevent
 
@@ -456,14 +464,3 @@ Domain Integerity specifies that all columns in a relational database must be de
 Entity Integrity concerns the concept of a primary key, which states that every table must have a primary key.
 
 Referential Integrity by guaranteeing that changes cannot be made to data in the primary key table if those changes incalidate the link to data in the foreign key table. - change the foreign key table first then change in primary key table.
-
-27. Transaction isolation level.
-
-```diff
-- Dirty Read
-A situation when a transaction reads data that has not yet been committed
-- Non Repeatable read
-occurs when a trasction reads the same row twice and gets a different value each time. 
-- Phantom Read
-occurs when two same queries are executed, but the rows retrieved by thhe two, are different.
-```
