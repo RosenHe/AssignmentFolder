@@ -346,7 +346,7 @@ var newMember = member with { Address = "Mumbai" };
 ```
 
 <h1>What does constructor do in a class? Can it be overridden? Can it be overloaded?</h1>
-Creating obejct of the Class that it is by initializing all the instance variables and creating a place in memory to hold the object. no overridden or overloaded.
+Creating obejct of the Class that it is by initializing all the instance variables and creating a place in memory to hold the object. no overridden. Okay with overloaded.
 
 <h1>Explain different access modifiers in C# </h1>
 
