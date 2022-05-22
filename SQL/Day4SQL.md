@@ -253,7 +253,7 @@ public String someMethod(boolean sortOrder) {
  </tr>
  <tr>
     <td>Must be a part of an SQL statement to get executed</td>
-    <td>Useing EXECUTE or EXEC</td>
+    <td>Using EXECUTE or EXEC</td>
  </tr>
   <tr>
     <td>Can only have input parameter</td>
@@ -458,9 +458,11 @@ The key difference between Table Scan and Index Scan is that @@data is stored in
 </table>
 Source from: https://www.geeksforgeeks.org/difference-between-join-and-union-in-sql/
 
+
 26. Domain Integrity & Entity Integrity & Referential Integrity
 Domain Integerity specifies that all columns in a relational database must be declared upon a defined domain
 
 Entity Integrity concerns the concept of a primary key, which states that every table must have a primary key.
 
 Referential Integrity by guaranteeing that changes cannot be made to data in the primary key table if those changes incalidate the link to data in the foreign key table. - change the foreign key table first then change in primary key table.
+ON DELETE CASCADE constraint is used in MySQL to delete the rows from the child table automatically, when the rows from the parent table are deleted.
