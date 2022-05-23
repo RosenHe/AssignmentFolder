@@ -68,7 +68,8 @@ class GFG {
 Lamda operation is used to create an anonymous method, It uses delegate to create an anonymouse methods. 
 
 ```
-MathDelegate mathDelegate = (a, b) => a * b;
+List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6 };  
+List<int> evenNumbers = list.FindAll(x => (x % 2) == 0);  
 ```
 <h5>Advantage</h5>
 Enhanced Iterative Syntax.
