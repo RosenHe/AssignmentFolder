@@ -11,7 +11,9 @@ Method References: enable us to define Lambda Expression by referring to methods
 (important)Usage of Collections in coding: 
 List, Set, Map - minimum ArrayList, LinkedList,HashMap(hashCode equals)
 Sorting a List/Array in a given attribute. Like sort a list of students by age or name.
+
 1. HashSet Class:
+
 - Permits the null value.
 - add(), remove(), contains(), size();
 - HashSet does not store duplicate items. if you give 2 objects that are equal then it stores only the first one. hashcode() adn equals() method.
@@ -19,6 +21,7 @@ Sorting a List/Array in a given attribute. Like sort a list of students by age o
 source:https://www.geeksforgeeks.org/hashset-in-java/
 
 2. HashMap Class:
+
 HashTable is synchronized, no null.
 - HashMap is unsynchronized.
 - HashMap allows null VALUES and only one null KEY. 
@@ -27,10 +30,12 @@ HashTable is synchronized, no null.
 source: https://www.geeksforgeeks.org/difference-between-hashmap-and-hashset/
 
 3. ArrayList Class:
+
 - dynamic length, store, access
 - Initialized a default capacity of 10.
 
 4. LinkedList Class:
+
 - double linked list， better for manipulating data. 
 - act as a list and queue.
 
