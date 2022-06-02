@@ -83,11 +83,12 @@ Interface just specific the behavior of a particular datatype, but not concered 
 OOP means that organizes software design around data, or objects, rather than functions and logic.
 
 <h1>SOLID</h1>
-Single-Responsiblity Principle -> class should have only one job.
-Open-closed Principle -> Objects or entity should be open for extension but closed for modification
-Liskov Substitution Principle -> every subclass or derived class should be subsitutable for their base or parent class. -----Simply put, if class A is a subtype of class B, we should be able to replace B with A without disrupting the behavior of our program.
-Interface Segregation Principle ->  define interface functions, shouldn't be forced to depend on methods they do not use.
-Dependency Inversion Principle -> Entities must depend on abstraction, not on concretions. high-level module must not depend on the low-level module, but they should depend on abstraction. 
+<h4>Single-Responsiblity Principle</h4>
+class should have only one job.
+<h4>Open-closed Principle</h4>Objects or entity should be open for extension but closed for modification
+<h4>Liskov Substitution Principle </h4> every subclass or derived class should be subsitutable for their base or parent class. -----Simply put, if class A is a subtype of class B, we should be able to replace B with A without disrupting the behavior of our program.
+<h4>Interface Segregation Principle </h4>  define interface functions, shouldn't be forced to depend on methods they do not use.
+<h4>Dependency Inversion Principle</h4>Entities must depend on abstraction, not on concretions. high-level module must not depend on the low-level module, but they should depend on abstraction. 
 
 <h1>MVC</h1>
 
