@@ -7,12 +7,8 @@
 ```
 
 Method References: enable us to define Lambda Expression by referring to methods directly using their name.
-
-(important)Usage of Collections in coding: 
-List, Set, Map - minimum ArrayList, LinkedList,HashMap(hashCode equals)
-Sorting a List/Array in a given attribute. Like sort a list of students by age or name.
-
-1. HashSet Class:
+<h1>Collections</h1>
+<h4> HashSet Class:</h4>
 
 - Permits the null value.
 - add(), remove(), contains(), size();
@@ -20,7 +16,7 @@ Sorting a List/Array in a given attribute. Like sort a list of students by age o
 - Initial Capacity and load factor are the importance factor for iteration performance.
 source:https://www.geeksforgeeks.org/hashset-in-java/
 
-2. HashMap Class:
+<h4>HashMap Class:</h4>
 
 HashTable is synchronized, no null.
 - HashMap is unsynchronized.
@@ -29,12 +25,12 @@ HashTable is synchronized, no null.
 - If duplicate: the old value will be replaced. No same key. 
 source: https://www.geeksforgeeks.org/difference-between-hashmap-and-hashset/
 
-3. ArrayList Class:
+<h4> ArrayList Class:</h4>
 
 - dynamic length, store, access
 - Initialized a default capacity of 10.
 
-4. LinkedList Class:
+<h4> LinkedList Class:</h4>
 
 - double linked list， better for manipulating data. 
 - act as a list and queue.
@@ -61,31 +57,67 @@ PriorityQueue<int[]> maxpq = new PriorityQueue<>(
             }//降序
 );
 ```
+<h1>String</h1>
 
-(important)basic java coding: String, sub-class, constructor, getter/setter, etc.
+- Immutable
+- Frequency modify use StringBuilder
+- StringBuffer and StringBuilder are similar, but StringBuilder is faster and preferred over StringBuffer for the single-threaded program. If thread safety is needed, then StringBuffer is used.
+    
 
-5. String
+<h1>Inheritance</h1>
 
-6. Sub-class, Inheritance
+- Overloading: Same name diff parameter
+- Overriding same name, rewrite function.
 
-7. Encapsulation
+<h1>Encapsulation</h1>
 Encapsulation: make sure the "sensitive" data is hidden from user.
-- 
+    
+- Data hiding: hiding unwanted info. such as restricting access to any member of an object.
+- Data binding: binding data members and the method together.
 
-(important)basic algorithm: Leetcode easy level
+<h1>Abstraction & Interface</h1>
+Some related class that need to share some lines of code, then we put these line of code within the abstract class, then this abstract class should be exteneded by all these related class.
+Interface just specific the behavior of a particular datatype, but not concered about the implementation of its behavior.
 
-advanced concepts in java: OOP, SOLID, MVC, design patterns, multithreading.
+<h1>OOP</h1>
+OOP means that organizes software design around data, or objects, rather than functions and logic.
 
-basic network: HTTP, TCP
+<h1>SOLID</h1>
+Single-Responsiblity Principle -> class should have only one job.
+Open-closed Principle -> Objects or entity should be open for extension but closed for modification
+Liskov Substitution Principle -> every subclass or derived class should be subsitutable for their base or parent class. -----Simply put, if class A is a subtype of class B, we should be able to replace B with A without disrupting the behavior of our program.
+Interface Segregation Principle ->  define interface functions, shouldn't be forced to depend on methods they do not use.
+Dependency Inversion Principle -> Entities must depend on abstraction, not on concretions. high-level module must not depend on the low-level module, but they should depend on abstraction. 
 
-basic DB: SQL, joins, index..
+<h1>MVC</h1>
 
-JVM, JDK, JRE的区别
+<h1>Design patterns</h1>
+
+<h1>Multithreading</h1>
+
+<h1>HTTP</h1>
+
+<h1>TCP</h1>
+
+<h1>SQL Questions:</h1>
+<h1>joins</h1>
+left Join: return all data from left table and matching data from right table, if there is no matching will having null value.
+
+<h1>index</h1>
+Indexes are used to retrieve data from the database more quickly than otherwise.
+
+<h1>JVM, JDK, JRE</h1>
+<h4>JVM</h4>
+Java Virtual Machine: whatever java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line, hence konwn as Interpreter.
+<h4>JDK</h4>
+Java Development kit: a kit provides the envioronment to develop and execute the java program.
+<h4>JRE</h4>
+Java Runtion Enviorment: an installation package that provides an enviorment to only run(not develope) the java program onto your machine. JRE is used by those who only want to run Java program that are End-Users of your system.
+
+
 
 Springboot & Angular
-Dependency Injection:
-
-
+<h1>Dependency Injection:</h1>
 Create object -> know which objects needs these objects -> provide them objects (instead of having it construct them itself).
     - Help unit testing;
     - 
