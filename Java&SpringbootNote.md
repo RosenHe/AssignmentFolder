@@ -131,7 +131,7 @@ Deadlock occur in a situation when a thread is waiting for an object lock, that 
 Transmission Control Protocal provides reliable communication between the sender and receiver. TCP is used along with the Internet Protocal referred as TCP/IP.
 
 <h1>UDP</h1>
-User Datagram Proocal provides a connection-less protocol service allowing packet of data to be transferred along two or more nodes.
+User Datagram Protocal provides a connection-less protocol service allowing packet of data to be transferred along two or more nodes.
   
 <h1>Socket</h1>
 An endpoint between 2 ways communications.
