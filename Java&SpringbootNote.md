@@ -39,6 +39,7 @@ return the hash code number of the collection.
 - act as a list and queue.
 
 <h4> PriorityQueue:</h4>
+
 - O(log(n)) for add() and poll()
 - not thread-safe
 - based on priority heap (mini heap)
