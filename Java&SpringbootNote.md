@@ -42,6 +42,7 @@ return the hash code number of the collection.
 - O(log(n)) for add() and poll()
 - not thread-safe
 - based on priority heap (mini heap)
+
 ```
 class Sortbyroll implements Comparator<T>{
     public int compare(Student a, Student b){
@@ -64,6 +65,7 @@ PriorityQueue<int[]> maxpq = new PriorityQueue<>(
             }//降序
 );
 ```
+
 <h1>String</h1>
 
 - Immutable
