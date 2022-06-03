@@ -38,6 +38,10 @@ return the hash code number of the collection.
 - double linked list， better for manipulating data. 
 - act as a list and queue.
 
+<h4> PriorityQueue:</h4>
+- O(log(n)) for add() and poll()
+- not thread-safe
+- based on priority heap (mini heap)
 ```
 class Sortbyroll implements Comparator<T>{
     public int compare(Student a, Student b){
