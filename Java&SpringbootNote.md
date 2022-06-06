@@ -73,8 +73,10 @@ PriorityQueue<int[]> maxpq = new PriorityQueue<>(
 - Frequency modify use StringBuilder
 - StringBuffer and StringBuilder are similar, but StringBuilder is faster and preferred over StringBuffer for the single-threaded program. If thread safety is needed, then StringBuffer is used.
     
-
 <h1>Inheritance</h1>
+- It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
+ 
+<h1>Polymorphism</h1>
 
 - Overloading: Same name diff parameter
 - Overriding same name, rewrite function.
